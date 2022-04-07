@@ -1,9 +1,6 @@
 <?php
-
-namespace Cxp\Avatar;
-
+namespace Wqb\Avatar;
 use Illuminate\Support\ServiceProvider;
-
 class AvatarProvider extends ServiceProvider
 {
     /**
@@ -13,11 +10,12 @@ class AvatarProvider extends ServiceProvider
      */
     public function boot()
     {
+        // 发布配置文件
         $this->publishes([
             __DIR__.'/config/avatar.php' => config_path('avatar.php'),
+            __DIR__.'/config/WawaSC-Regular.otf' => public_path('/fonts/WawaSC-Regular.otf'),
         ]);
     }
-
     /**
      * Register the application services.
      *

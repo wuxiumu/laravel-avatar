@@ -1,6 +1,5 @@
 <?php
-namespace Cxp\Avatar\Facades;
-
+namespace Wqb\Avatar\Facades;
 use Illuminate\Support\Facades\Facade;
 class Avatar extends Facade
 {
