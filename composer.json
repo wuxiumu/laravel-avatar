@@ -1,0 +1,17 @@
+{
+    "name": "wuqb/laravel-avatar",
+    "description": "laravel avatar",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "wuqb",
+            "email": "824543976@qq.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "Wqb\\Avatar\\": "src"
+      }
+    },
+    "require": {}
+}
