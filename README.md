@@ -21,3 +21,13 @@ Wqb\Avatar\AvatarProvider::class,
 // 第一个参数姓名，第二个参数图片生成位置
 Avatar::output('吴','wu.png')
 ```
+
+
+```
+php artisan serve --port=8080
+Route::get('/avatar-bao', function () {
+    Avatar::output('宝','bao.png');
+});
+```
+
+![](./resources/wu.png)
