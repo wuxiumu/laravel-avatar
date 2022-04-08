@@ -10,7 +10,7 @@ class AvatarProvider extends ServiceProvider
      */
     public function boot()
     {
-        // 发布配置文件
+        $this->loadRoutesFrom(__DIR__.'/../routes/avatar.php');
         $this->publishes([
             __DIR__.'/config/avatar.php' => config_path('avatar.php'),
             __DIR__.'/config/WawaSC-Regular.otf' => public_path('/fonts/WawaSC-Regular.otf'),
